@@ -1,0 +1,39 @@
+.login-wrapper{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #222d32;
+	padding: 15px;
+
+	.login-inner{
+		max-width: 500px;
+		background-color: #1a2226;
+		padding: 30px;
+		border-radius: 5px;
+		box-shadow: 0 0 5px #000;
+		transition: all ease-in 0.2s;
+
+		h3{
+			color: #fff;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.login-form{
+
+			label{
+				color: #eee;
+				margin: 15px 0 5px;
+			}
+
+			button{
+				margin-top: 20px;
+			}
+		}
+
+		&:hover{
+			box-shadow: 0 0 15px #000;
+		}
+	}
+}

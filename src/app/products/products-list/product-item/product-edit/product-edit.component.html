@@ -1,0 +1,23 @@
+<div class="product-edit" [ngClass]="{'active': productEditClasses.active}">
+	<div class="top">
+		<div class="title">Product edit</div>
+		<button class="btn btn-warning close-button" (click)="closeProductEdit()">close</button>
+	</div>
+	<div class="inner">
+		<form #productEditForm="ngForm" (ngSubmit)="onSubmitProductEditForm(productEditForm.value)" [formGroup]="productEdit">
+			<div class="form-group">
+				<label for="name">Name</label>
+				<input type="text" formControlName="name" class="form-control" id="name" placeholder="Enter name">
+			</div>
+			<div class="form-group">
+				<label for="description">Description</label>
+				<textarea formControlName="description" class="form-control" id="description" placeholder="Enter description" cols="30" rows="5"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="price">Price</label>
+				<input type="number" formControlName="price" class="form-control" id="price" placeholder="Enter price" min="1000" step="1000">
+			</div>
+			<button type="submit" class="btn btn-primary" [disabled]="!productEdit.valid">Update</button>
+		</form>
+	</div>
+</div>

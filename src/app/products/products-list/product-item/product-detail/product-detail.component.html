@@ -1,0 +1,14 @@
+<div class="product-detail" [ngClass]="{'active': productDetailClasses.active}">
+	<div class="top">
+		<div class="title">Product detail</div>
+		<button class="btn btn-warning close-button" (click)="closeProductDetail()">close</button>
+	</div>
+	<div class="inner">
+		<div class="image">
+			PRODUCT IMAGE
+		</div>
+		<div class="name">{{product?.name}}</div>
+		<div class="price">{{product?.price}} $</div>
+		<div class="desc">{{product?.description}}</div>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+<app-logout *ngIf="isLogin"></app-logout>
+<div class="container">
+	<div class="text-center" *ngIf="isAdmin">
+		<button class="btn btn-primary mt-5" (click)="openProductAdd()">Add new product</button>
+	</div>
+	<div class="text-center empty-list-text" *ngIf="!productsList.length">
+		<p>Products list is empty!</p>
+	</div>
+	<div class="row" *ngIf="productsList.length">
+		<div class="col-md-4 col-lg-3" *ngFor="let product of productsList">
+			<app-product-item [product]="product" [isAdmin]="isAdmin" (sharedProduct)="openProductDetail($event)" (editableProduct)="openProductEdit($event)" (deletedProductId)="deleteProduct($event)"></app-product-item>
+		</div>
+	</div>
+</div>
+<app-product-detail *ngIf="product" [product]="product" [sentProductDetailClasses]="productDetailClasses"></app-product-detail>
+<app-product-add *ngIf="isAdmin" [sentProductAddClasses]="productAddClasses" (addedProduct)="onAddProduct($event)"></app-product-add>
+<app-product-edit *ngIf="product && isAdmin" [product]="product" [sentProductEditClasses]="productEditClasses" (updatedProduct)="onEditProduct($event)"></app-product-edit>
