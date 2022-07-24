@@ -27,7 +27,7 @@ export class ProductItemComponent implements OnInit {
 	}
 
 	onDeleteProduct(){
-		if(confirm('Are you sure to delete this product?!')){
+		if(confirm('برای حذف محصول اطمینان دارید?!')){
 			this.deletedProductId.emit(this.product.id);
 		}
 	}

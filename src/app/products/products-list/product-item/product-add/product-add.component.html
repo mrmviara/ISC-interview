@@ -1,23 +1,25 @@
 <div class="product-add" [ngClass]="{'active': productAddClasses.active}">
 	<div class="top">
-		<div class="title">Product add</div>
-		<button class="btn btn-warning close-button" (click)="closeProductAdd()">close</button>
+		<div class="title">افزودن محصول</div>
+		<button class="btn close-button" (click)="closeProductAdd()">
+			<img src="../../../../../assets/images/close.png" alt="">
+		</button>
 	</div>
 	<div class="inner">
 		<form #productAddForm="ngForm" (ngSubmit)="onSubmitProductAddForm(productAddForm.value)" [formGroup]="productAdd">
 			<div class="form-group">
-				<label for="name">Name</label>
-				<input type="text" formControlName="name" class="form-control" id="name" placeholder="Enter name">
+				<label for="name">نام</label>
+				<input type="text" formControlName="name" class="form-control" id="name" placeholder="نام محصول">
 			</div>
 			<div class="form-group">
-				<label for="description">Description</label>
-				<textarea formControlName="description" class="form-control" id="description" placeholder="Enter description" cols="30" rows="5"></textarea>
+				<label for="description">توضیحات</label>
+				<textarea formControlName="description" class="form-control" id="description" placeholder="توضیحات محصول" cols="30" rows="5"></textarea>
 			</div>
 			<div class="form-group">
-				<label for="price">Price</label>
-				<input type="number" formControlName="price" class="form-control" id="price" placeholder="Enter price" min="1000" step="1000">
+				<label for="price">قیمت</label>
+				<input type="number" formControlName="price" class="form-control" id="price" placeholder="قیمت محصول" min="1000" step="1000">
 			</div>
-			<button type="submit" class="btn btn-primary" [disabled]="!productAdd.valid">Add</button>
+			<button type="submit" class="btn btn-primary" [disabled]="!productAdd.valid">افزودن</button>
 		</form>
 	</div>
 </div>

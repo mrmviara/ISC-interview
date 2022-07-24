@@ -7,14 +7,14 @@ export class ProductsService {
 	products: any = [
 		{
 			id: 1,
-			name: "my first product",
-			description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, quaerat labore doloribus deleniti vel repellat exercitationem consequatur! Non, laborum est porro ex cupiditate amet quam quas iusto odit, doloribus dolor?",
+			name: "محصول اول",
+			description: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد.",
 			price: 32000
 		},
 		{
 			id: 2,
-			name: "the second one",
-			description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, quaerat labore doloribus deleniti vel repellat exercitationem consequatur! Non, laborum est porro ex cupiditate amet quam quas iusto odit, doloribus dolor?",
+			name: "دومین محصول",
+			description: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد.",
 			price: 322000
 		},
 	];

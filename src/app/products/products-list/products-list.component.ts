@@ -22,7 +22,7 @@ export class ProductsListComponent implements OnInit {
 	constructor(
 		private jwtService: JwtService,
 		private productsService: ProductsService,
-		private userService: UserService
+		private userService: UserService,
 	){
 		if(this.jwtService.getToken()){
 			this.isLogin = true;

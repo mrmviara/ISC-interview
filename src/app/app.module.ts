@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ProductsModule } from './products/products.module';
+import { NoAuthGuard } from './services/no-auth-guard.service';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ProductsModule } from './products/products.module';
     ProductsService,
     JwtService,
     AuthGuard,
+    NoAuthGuard,
     UserService
   ],
   bootstrap: [AppComponent]

@@ -1,10 +1,10 @@
 <app-logout *ngIf="isLogin"></app-logout>
-<div class="container">
+<div class="container pt-5">
 	<div class="text-center" *ngIf="isAdmin">
-		<button class="btn btn-primary mt-5" (click)="openProductAdd()">Add new product</button>
+		<button class="btn btn-primary mt-5" (click)="openProductAdd()">افزودن محصول</button>
 	</div>
 	<div class="text-center empty-list-text" *ngIf="!productsList.length">
-		<p>Products list is empty!</p>
+		<p>محصولی وجود ندارد!</p>
 	</div>
 	<div class="row" *ngIf="productsList.length">
 		<div class="col-md-4 col-lg-3" *ngFor="let product of productsList">
